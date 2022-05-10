@@ -1,7 +1,9 @@
 const NonAttached = () => {
   return (
     <>
-      <h2 className="attached">Non-Attached</h2>
+      <div className="wrapper">
+        <p className="attached">Non-Attached</p>
+      </div>
     </>
   );
 };

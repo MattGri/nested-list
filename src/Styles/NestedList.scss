@@ -53,24 +53,92 @@
 }
 
 .analyticsProgrammers {
-    margin-left: 50px;
+    margin-left: 25px;
     background-color: rgb(87, 56, 143);
 }
 
 .items {
-    margin-left: 70px;
-    background-color: #223347;
+    margin-left: 25px;
 
     .list {
         list-style-type: none;
+
     }
+    
 }
 
-.items:nth-child(even) {
+
+// .list::before {
+//     content: "";
+//     position: absolute;
+//     display: block;
+//     background-color: rgb(224, 169, 169);
+//     width: 13px;
+//     height: 10px;
+// }
+
+.wrapper:nth-child(even) {
     background-color: rgb(109, 76, 76);
 
     &:hover {
         background-color: #2f00db;
+        transition: 0.5s;
+    }
+}
+
+
+.listlinesComponent {
+    border-left: 4px solid grey;
+}
+
+.listsComponent {
+    list-style: none;
+    position: relative;
+
+}
+
+.listsComponent::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: rgb(224, 169, 169);
+    width: 13px;
+    height: 11px;
+
+    top: 13.5px;
+
+}
+
+
+.listlineAnalytics {
+    border-left: 4px solid grey;
+}
+
+.list {
+    position: relative;
+}
+
+.list::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background-color: rgb(224, 169, 169);
+    width: 13px;
+    height: 11px;
+    top: 4.5px;
+    left: -30px;
+}
+
+.border {
+    border-left: 4px solid grey;
+    margin-left: 15px;
+}
+
+.wrappers:nth-child(even) {
+    background-color: red;
+
+    &:hover {
+        background-color: #0f0f11;
         transition: 0.5s;
     }
 }

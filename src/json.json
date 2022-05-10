@@ -2,65 +2,65 @@
   "treeMultiline": "tree Multiline",
   "firstChapter": "subdivision 1",
   "team": {
-    "firstTeamHr": "first team HR",
-    "firstTeamMarketing": "first team marketing",
-    "firstTeamAnalytics": "first team analytics",
+    "firstTeamHr": "1 team HR",
+    "firstTeamMarketing": "1 team marketing",
+    "firstTeamAnalytics": "1 team analytics",
     "analytics": {
-      "calendar": "calendar#",
-      "cockpit": "cockpit#",
-      "dashboard": "dashboard#",
-      "reports": "reports#",
-      "tickets": "tickets#"
+      "calendar": "calendar 1",
+      "cockpit": "cockpit 1",
+      "dashboard": "dashboard 1",
+      "reports": "reports 1",
+      "tickets": "tickets 1"
     },
-    "programmersTeam": "programmers team",
+    "programmersTeam": "1 programmers team",
     "programmers": {
-      "frontend": "frontend",
-      "backend": "backend",
-      "design": "design",
-      "devops": "devops",
-      "qa": "qa"
+      "frontend": "frontend 1",
+      "backend": "backend 1",
+      "design": "design 1",
+      "devops": "devops ",
+      "qa": "qa 1"
     }
   },
   "secondChapter": "subdivision 2",
   "team2": {
-    "secondTeamHr": "second team HR",
-    "secondTeamMarketing": "second team marketing",
-    "secondTeamAnalytics": "second team analytics",
+    "secondTeamHr": "2 team HR",
+    "secondTeamMarketing": "2 team marketing",
+    "secondTeamAnalytics": "2 team analytics",
     "analytics": {
-      "calendar": "calendar#",
-      "cockpit": "cockpit#",
-      "dashboard": "dashboard#",
-      "reports": "reports#",
-      "tickets": "tickets#"
+      "calendar": "calendar 2",
+      "cockpit": "cockpit 2",
+      "dashboard": "dashboard 2",
+      "reports": "reports 2",
+      "tickets": "tickets 2"
     },
-    "secondProgrammersTeam": "programmers team",
+    "secondProgrammersTeam": "2 programmers team",
     "programmers": {
-      "frontend": "frontend",
-      "backend": "backend",
-      "design": "design",
-      "devops": "devops",
-      "qa": "qa"
+      "frontend": "frontend 2",
+      "backend": "backend 2",
+      "design": "design 2",
+      "devops": "devops 2",
+      "qa": "qa 2"
     }
   },
   "thirdChapter": "subdivision 3",
   "team3": {
-    "thirdTeamHr": "third team HR",
-    "thirdTeamMarketing": "third team marketing",
-    "thirdTeamAnalytics": "third team analytics",
+    "thirdTeamHr": "3 team HR",
+    "thirdTeamMarketing": "3 team marketing",
+    "thirdTeamAnalytics": "3 team analytics",
     "analytics": {
-      "calendar": "calendar",
-      "cockpit": "cockpit",
-      "dashboard": "dashboard",
-      "reports": "reports",
-      "tickets": "tickets"
+      "calendar": "calendar 3",
+      "cockpit": "cockpit 3",
+      "dashboard": "dashboard 3",
+      "reports": "reports 3",
+      "tickets": "tickets 3"
     },
-    "thirdTeamProgrammers": "programmers team",
+    "thirdTeamProgrammers": "3 programmers team",
     "programmers": {
-      "frontend": "frontend",
-      "backend": "backend",
-      "design": "design",
-      "devops": "devops",
-      "qa": "qa"
+      "frontend": "frontend 3",
+      "backend": "backend 3",
+      "design": "design 3",
+      "devops": "devops 3",
+      "qa": "qa 3"
     }
   }
 }

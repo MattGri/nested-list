@@ -36,42 +36,51 @@ const NestedList = () => {
         />
         <label className="treeText">{data.treeMultiline}</label>
       </div>
-  
+
       {treeMultiline ? (
         <>
-        {/* <div className="verticalLine">&#124;</div>  */}
-          <FirstList
-            firstChapter={firstChapter}
-            setFirstChapter={setFirstChapter}
-            setSecondChapter={setSecondChapter}
-            setThirdChapter={setThirdChapter}
-            firstAnalytics={firstAnalytics}
-            setFirstAnalytics={setFirstAnalytics}
-            firstProgrammers={firstProgrammers}
-            setFirstProgrammers={setFirstProgammers}
-          />
-              
-          <SecondList
-            secondChapter={secondChapter}
-            setSecondChapter={setSecondChapter}
-            setFirstChapter={setFirstChapter}
-            setThirdChapter={setThirdChapter}
-            secondAnalytics={secondAnalytics}
-            setSecondAnalytics={setSecondAnalytics}
-            secondProgrammers={secondProgrammers}
-            setSecondProgrammers={setSecondProgrammers}
-          />
-          <ThirdList
-            thirdChapter={thirdChapter}
-            setThirdChapter={setThirdChapter}
-            setFirstChapter={setFirstChapter}
-            setSecondChapter={setSecondChapter}
-            thirdAnalytics={thirdAnalytics}
-            setThirdAnalytics={setThirdAnalytics}
-            thirdProgrammers={thirdProgrammers}
-            setThirdProgrammers={setThirdProgrammers}
-          />
-          <NonAttached />
+          {/* <div className="verticalLine">&#124;</div>  */}
+          <ul className="listlinesComponent">
+            <li className='listsComponent'>
+              <FirstList
+                firstChapter={firstChapter}
+                setFirstChapter={setFirstChapter}
+                setSecondChapter={setSecondChapter}
+                setThirdChapter={setThirdChapter}
+                firstAnalytics={firstAnalytics}
+                setFirstAnalytics={setFirstAnalytics}
+                firstProgrammers={firstProgrammers}
+                setFirstProgrammers={setFirstProgammers}
+              />
+            </li>
+            <li className='listsComponent'>
+              <SecondList
+                secondChapter={secondChapter}
+                setSecondChapter={setSecondChapter}
+                setFirstChapter={setFirstChapter}
+                setThirdChapter={setThirdChapter}
+                secondAnalytics={secondAnalytics}
+                setSecondAnalytics={setSecondAnalytics}
+                secondProgrammers={secondProgrammers}
+                setSecondProgrammers={setSecondProgrammers}
+              />
+            </li>
+            <li className='listsComponent'>
+              <ThirdList
+                thirdChapter={thirdChapter}
+                setThirdChapter={setThirdChapter}
+                setFirstChapter={setFirstChapter}
+                setSecondChapter={setSecondChapter}
+                thirdAnalytics={thirdAnalytics}
+                setThirdAnalytics={setThirdAnalytics}
+                thirdProgrammers={thirdProgrammers}
+                setThirdProgrammers={setThirdProgrammers}
+              />
+            </li>
+            <li className='listsComponent'>
+              <NonAttached />
+            </li>
+          </ul>
         </>
       ) : (
         ''
