@@ -1,0 +1,42 @@
+@import '../Variables/Variables.scss';
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b4a81;
+    width: 200px;
+    margin: 10px auto 10px 15px;
+    padding: 10px;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: #2f00db;
+        transition: 0.5s;
+    }
+}
+
+
+.text {
+    color: $textColor;
+    margin-left: 5px;
+}
+
+.margin {
+    margin: 10px auto 10px 35px;
+    background-color: #223347;
+
+    .team {
+        color: $textColor;
+        margin-left: 5px;
+        list-style: none;
+    }
+
+}
+
+.margin:nth-child(even) {
+    background-color: rgb(82, 51, 51);
+
+    
+}

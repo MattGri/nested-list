@@ -1,6 +1,6 @@
 {
   "treeMultiline": "tree Multiline",
-  "firstChapter": "first Chapter",
+  "firstChapter": "subdivision 1",
   "team": {
     "firstTeamHr": "first team HR",
     "firstTeamMarketing": "first team marketing",
@@ -21,7 +21,7 @@
       "qa": "qa"
     }
   },
-  "secondChapter": "second Chapter",
+  "secondChapter": "subdivision 2",
   "team2": {
     "secondTeamHr": "second team HR",
     "secondTeamMarketing": "second team marketing",
@@ -42,7 +42,7 @@
       "qa": "qa"
     }
   },
-  "thirdChapter": "third Chapter",
+  "thirdChapter": "subdivision 3",
   "team3": {
     "thirdTeamHr": "third team HR",
     "thirdTeamMarketing": "third team marketing",

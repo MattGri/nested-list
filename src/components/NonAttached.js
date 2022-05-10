@@ -1,7 +1,7 @@
 const NonAttached = () => {
   return (
     <>
-      <h2>Non-Attached</h2>
+      <h2 className="attached">Non-Attached</h2>
     </>
   );
 };

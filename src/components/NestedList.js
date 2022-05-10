@@ -1,11 +1,18 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import data from '../json.json';
 import FirstList from './FirstList';
 import SecondList from './SecondList';
 import ThirdList from './ThirdList';
 import NonAttached from './NonAttached';
+// import { motion } from "framer-motion"
+
+import '../Styles/NestedList.scss';
 
 const NestedList = () => {
+  useEffect(() => {
+    document.title = 'Recruitment task';
+  }, []);
+
   const [treeMultiline, setTreeMultiline] = useState(false);
   const [firstChapter, setFirstChapter] = useState(false);
   const [secondChapter, setSecondChapter] = useState(false);
@@ -18,17 +25,21 @@ const NestedList = () => {
   const [thirdProgrammers, setThirdProgrammers] = useState(false);
 
   return (
-    <>
-      <h1>zadanie rekrutacyjne</h1>
-      <input
-        type="checkbox"
-        onClick={() => {
-          setTreeMultiline(!treeMultiline);
-        }}
-      />
-      <label>{data.treeMultiline}</label>
+    <div className="container">
+      <h1 className="title">Recruitment Task</h1>
+      <div className="box">
+        <input
+          type="checkbox"
+          onClick={() => {
+            setTreeMultiline(!treeMultiline);
+          }}
+        />
+        <label className="treeText">{data.treeMultiline}</label>
+      </div>
+  
       {treeMultiline ? (
         <>
+        {/* <div className="verticalLine">&#124;</div>  */}
           <FirstList
             firstChapter={firstChapter}
             setFirstChapter={setFirstChapter}
@@ -39,6 +50,7 @@ const NestedList = () => {
             firstProgrammers={firstProgrammers}
             setFirstProgrammers={setFirstProgammers}
           />
+              
           <SecondList
             secondChapter={secondChapter}
             setSecondChapter={setSecondChapter}
@@ -64,7 +76,7 @@ const NestedList = () => {
       ) : (
         ''
       )}
-    </>
+    </div>
   );
 };
 

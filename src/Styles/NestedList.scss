@@ -1,0 +1,76 @@
+@import '../Variables/Variables.scss';
+
+.container {
+    margin: 20px;
+    border-radius: 20px;
+    width: 400px;
+    background-color: #141623;
+    padding: 20px;
+
+    .title {
+        color: $textColor;
+        margin-bottom: 10px;
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #1380ff;
+        width: 200px;
+        padding: 10px;
+        transition: 0.5s;
+
+        &:hover {
+            background-color: #2f00db;
+            transition: 0.5s;
+        }
+
+    }
+
+    .treeText {
+        color: $textColor;
+        margin-left: 5px;
+    }
+
+    // .verticalLine {
+
+    //     position: absolute;
+    //     width: 1px;
+    //     border-left: 6px solid green;
+    //     height: 150px;
+    // }
+
+}
+
+.text {
+    color: $textColor;
+    text-align: center;
+}
+
+.attached {
+    color: $textColor;
+}
+
+.analyticsProgrammers {
+    margin-left: 50px;
+    background-color: rgb(87, 56, 143);
+}
+
+.items {
+    margin-left: 70px;
+    background-color: #223347;
+
+    .list {
+        list-style-type: none;
+    }
+}
+
+.items:nth-child(even) {
+    background-color: rgb(109, 76, 76);
+
+    &:hover {
+        background-color: #2f00db;
+        transition: 0.5s;
+    }
+}

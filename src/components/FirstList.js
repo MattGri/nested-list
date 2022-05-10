@@ -1,5 +1,7 @@
 import data from '../json.json';
 
+import '../Styles/FirstList.scss';
+
 const FirstList = ({
   firstChapter,
   setFirstChapter,
@@ -13,46 +15,77 @@ const FirstList = ({
   return (
     <>
       <div>
-        <input
-          type="radio"
-          id="firstChapter"
-          name="chapter"
-          value="firstChapter"
-          checked={firstChapter}
-          onClick={() => {
-            setFirstChapter(true);
-            setSecondChapter(false);
-            setThirdChapter(false);
-          }}
-        />
-        <label htmlFor="firstChapter">{data.firstChapter}</label>
+        <div className="wrapper">
+          <input
+            type="radio"
+            id="firstChapter"
+            name="chapter"
+            value="firstChapter"
+            checked={firstChapter}
+            onClick={() => {
+              setFirstChapter(true);
+              setSecondChapter(false);
+              setThirdChapter(false);
+            }}
+          />
+          <label htmlFor="firstChapter" className="text">
+            {data.firstChapter}
+          </label>
+        </div>
         {firstChapter ? (
           <>
             <ul>
-              <li>{data.team.firstTeamHr}</li>
-              <li>{data.team.firstTeamMarketing}</li>
+              <div className="wrapper margin">
+                <li className="team">{data.team.firstTeamHr}</li>
+              </div>
+              <div className="wrapper margin">
+                <li className="team">{data.team.firstTeamMarketing}</li>
+              </div>
             </ul>
             <div>
-              <input
-                type="checkbox"
-                id="firstChapter"
-                name="chapter"
-                value="firstChapter"
-                checked={firstAnalytics}
-                onClick={() => {
-                  setFirstAnalytics(!firstAnalytics);
-                }}
-              />
-              <label>{data.team.firstTeamAnalytics}</label>
+              <div className="wrapper analyticsProgrammers">
+                <input
+                  type="checkbox"
+                  id="firstChapter"
+                  name="chapter"
+                  value="firstChapter"
+                  checked={firstAnalytics}
+                  onClick={() => {
+                    setFirstAnalytics(!firstAnalytics);
+                  }}
+                />
+                <label className="treeText">
+                  {data.team.firstTeamAnalytics}
+                </label>
+              </div>
               {firstAnalytics ? (
                 <>
                   <ul>
-                    <li>{data.team.analytics.calendar}</li>
-                    <li>{data.team.analytics.cockpit}</li>
-                    <li>{data.team.analytics.dashboard}</li>
-
-                    <li>{data.team.analytics.reports}</li>
-                    <li>{data.team.analytics.tickets}</li>
+                    <div className="wrapper items">
+                      <li className="treeText list">
+                        {data.team.analytics.calendar}
+                      </li>
+                    </div>
+                    <div className="wrapper items">
+                      <li className="treeText list">
+                        {data.team.analytics.cockpit}
+                      </li>
+                    </div>
+                    <div className="wrapper items">
+                      <li className="treeText list">
+                        {data.team.analytics.dashboard}
+                      </li>
+                    </div>
+                    <div className="wrapper items">
+                      <li className="treeText list">
+                        {data.team.analytics.reports}
+                      </li>
+                    </div>
+                    <div className="wrapper items">
+                      <li className="treeText list">
+                        {data.team.analytics.tickets}
+                      </li>
+                    </div>
                   </ul>
                 </>
               ) : (
@@ -60,25 +93,47 @@ const FirstList = ({
               )}
             </div>
             <div>
-              <input
-                type="checkbox"
-                id="firstChapter"
-                name="chapter"
-                value="firstChapter"
-                checked={firstProgrammers}
-                onClick={() => {
-                  setFirstProgrammers(!firstProgrammers);
-                }}
-              />
-              <label>{data.team.programmersTeam}</label>
+              <div className="wrapper analyticsProgrammers">
+                <input
+                  type="checkbox"
+                  id="firstChapter"
+                  name="chapter"
+                  value="firstChapter"
+                  checked={firstProgrammers}
+                  onClick={() => {
+                    setFirstProgrammers(!firstProgrammers);
+                  }}
+                />
+                <label className="treeText">{data.team.programmersTeam}</label>
+              </div>
               {firstProgrammers ? (
                 <>
                   <ul>
-                    <li>{data.team.programmers.frontend}</li>
-                    <li>{data.team.programmers.backend}</li>
-                    <li>{data.team.programmers.design}</li>
-                    <li>{data.team.programmers.devops}</li>
-                    <li>{data.team.programmers.qa}</li>
+                    <div className="wrapper items">
+                      <li className="treeText list">
+                        {data.team.programmers.frontend}
+                      </li>
+                    </div>
+                    <div className="wrapper items">
+                      <li className="treeText list">
+                        {data.team.programmers.backend}
+                      </li>
+                    </div>
+                    <div className="wrapper items">
+                      <li className="treeText list">
+                        {data.team.programmers.design}
+                      </li>
+                    </div>
+                    <div className="wrapper items">
+                      <li className="treeText list">
+                        {data.team.programmers.devops}
+                      </li>
+                    </div>
+                    <div className="wrapper items">
+                      <li className="treeText list">
+                        {data.team.programmers.qa}
+                      </li>
+                    </div>
                   </ul>
                 </>
               ) : (
