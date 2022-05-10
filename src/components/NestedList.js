@@ -4,7 +4,7 @@ import FirstList from './FirstList';
 import SecondList from './SecondList';
 import ThirdList from './ThirdList';
 import NonAttached from './NonAttached';
-// import { motion } from "framer-motion"
+import { motion } from 'framer-motion';
 
 import '../Styles/NestedList.scss';
 
@@ -25,67 +25,78 @@ const NestedList = () => {
   const [thirdProgrammers, setThirdProgrammers] = useState(false);
 
   return (
-    <div className="container">
-      <h1 className="title">Recruitment Task</h1>
-      <div className="box">
-        <input
-          type="checkbox"
-          onClick={() => {
-            setTreeMultiline(!treeMultiline);
-          }}
-        />
-        <label className="treeText">{data.treeMultiline}</label>
-      </div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
+      <div className="container">
+        <h1 className="title">Recruitment Task</h1>
+        <div className="box">
+          <input
+            type="checkbox"
+            onClick={() => {
+              setTreeMultiline(!treeMultiline);
+            }}
+          />
+          <label className="treeText">{data.treeMultiline}</label>
+        </div>
 
-      {treeMultiline ? (
-        <>
-          {/* <div className="verticalLine">&#124;</div>  */}
-          <ul className="listlinesComponent">
-            <li className='listsComponent'>
-              <FirstList
-                firstChapter={firstChapter}
-                setFirstChapter={setFirstChapter}
-                setSecondChapter={setSecondChapter}
-                setThirdChapter={setThirdChapter}
-                firstAnalytics={firstAnalytics}
-                setFirstAnalytics={setFirstAnalytics}
-                firstProgrammers={firstProgrammers}
-                setFirstProgrammers={setFirstProgammers}
-              />
-            </li>
-            <li className='listsComponent'>
-              <SecondList
-                secondChapter={secondChapter}
-                setSecondChapter={setSecondChapter}
-                setFirstChapter={setFirstChapter}
-                setThirdChapter={setThirdChapter}
-                secondAnalytics={secondAnalytics}
-                setSecondAnalytics={setSecondAnalytics}
-                secondProgrammers={secondProgrammers}
-                setSecondProgrammers={setSecondProgrammers}
-              />
-            </li>
-            <li className='listsComponent'>
-              <ThirdList
-                thirdChapter={thirdChapter}
-                setThirdChapter={setThirdChapter}
-                setFirstChapter={setFirstChapter}
-                setSecondChapter={setSecondChapter}
-                thirdAnalytics={thirdAnalytics}
-                setThirdAnalytics={setThirdAnalytics}
-                thirdProgrammers={thirdProgrammers}
-                setThirdProgrammers={setThirdProgrammers}
-              />
-            </li>
-            <li className='listsComponent'>
-              <NonAttached />
-            </li>
-          </ul>
-        </>
-      ) : (
-        ''
-      )}
-    </div>
+        {treeMultiline ? (
+          <>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8 }}
+            >
+              <ul className="listlinesComponent">
+                <li className="listsComponent">
+                  <FirstList
+                    firstChapter={firstChapter}
+                    setFirstChapter={setFirstChapter}
+                    setSecondChapter={setSecondChapter}
+                    setThirdChapter={setThirdChapter}
+                    firstAnalytics={firstAnalytics}
+                    setFirstAnalytics={setFirstAnalytics}
+                    firstProgrammers={firstProgrammers}
+                    setFirstProgrammers={setFirstProgammers}
+                  />
+                </li>
+                <li className="listsComponent">
+                  <SecondList
+                    secondChapter={secondChapter}
+                    setSecondChapter={setSecondChapter}
+                    setFirstChapter={setFirstChapter}
+                    setThirdChapter={setThirdChapter}
+                    secondAnalytics={secondAnalytics}
+                    setSecondAnalytics={setSecondAnalytics}
+                    secondProgrammers={secondProgrammers}
+                    setSecondProgrammers={setSecondProgrammers}
+                  />
+                </li>
+                <li className="listsComponent">
+                  <ThirdList
+                    thirdChapter={thirdChapter}
+                    setThirdChapter={setThirdChapter}
+                    setFirstChapter={setFirstChapter}
+                    setSecondChapter={setSecondChapter}
+                    thirdAnalytics={thirdAnalytics}
+                    setThirdAnalytics={setThirdAnalytics}
+                    thirdProgrammers={thirdProgrammers}
+                    setThirdProgrammers={setThirdProgrammers}
+                  />
+                </li>
+                <li className="listsComponent">
+                  <NonAttached />
+                </li>
+              </ul>
+            </motion.div>
+          </>
+        ) : (
+          ''
+        )}
+      </div>
+    </motion.div>
   );
 };
 
