@@ -49,8 +49,8 @@ const NestedList = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
             >
-              <ul className="listlinesComponent">
-                <li className="listsComponent">
+              <ul className="borderLineComponent">
+                <li className="line">
                   <FirstList
                     firstChapter={firstChapter}
                     setFirstChapter={setFirstChapter}
@@ -62,7 +62,7 @@ const NestedList = () => {
                     setFirstProgrammers={setFirstProgammers}
                   />
                 </li>
-                <li className="listsComponent">
+                <li className="line">
                   <SecondList
                     secondChapter={secondChapter}
                     setSecondChapter={setSecondChapter}
@@ -74,7 +74,7 @@ const NestedList = () => {
                     setSecondProgrammers={setSecondProgrammers}
                   />
                 </li>
-                <li className="listsComponent">
+                <li className="line">
                   <ThirdList
                     thirdChapter={thirdChapter}
                     setThirdChapter={setThirdChapter}
@@ -86,7 +86,7 @@ const NestedList = () => {
                     setThirdProgrammers={setThirdProgrammers}
                   />
                 </li>
-                <li className="listsComponent">
+                <li className="line">
                   <NonAttached />
                 </li>
               </ul>

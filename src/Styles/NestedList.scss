@@ -1,5 +1,11 @@
 @import '../Variables/Variables.scss';
 
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     margin: 20px;
     border-radius: 20px;
@@ -7,38 +13,68 @@
     background-color: #141623;
     padding: 20px;
 
+    @media(max-width: 420px) {
+        width: auto;
+    }
+
+    @media(max-width: 350px) {
+        padding: 10px;
+    }
+
     .title {
         color: $textColor;
         margin-bottom: 10px;
+
+        @media(max-width: 350px) {
+            font-size: 28px;
+        }
     }
 
     .box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #1380ff;
+        @include flexCenter();
+        background-color: #023e8a;
         width: 200px;
         padding: 10px;
         transition: 0.5s;
 
         &:hover {
-            background-color: #2f00db;
+            background-color: $hoverColor;
             transition: 0.5s;
         }
-
     }
 
     .treeText {
         color: $textColor;
         margin-left: 5px;
     }
+
+    .borderLineComponent {
+        border-left: 4px solid $lineColor;
+    }
+    
+    .line {
+        list-style: none;
+        position: relative;
+    }
+    
+    .line::before {
+        content: "";
+        position: absolute;
+        display: block;
+        background-color: #3d5afe;
+        width: 13px;
+        height: 11px;
+        top: 13.5px;
+    }
+    
+    .evenSub {
+        background-color: #0096c7;
+    }
 }
 
 .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1b4a81;
+    @include flexCenter();
+    background-color: #164f6e;
     width: 200px;
     margin: 10px auto 10px 15px;
     padding: 10px;
@@ -49,36 +85,39 @@
         transition: 0.5s;
     }
 
-    // .wrapper:nth-child(even) {
-    //     background-color: rgb(109, 76, 76);
-
-    //     &:hover {
-    //         background-color: $hoverColor;
-    //         transition: 0.5s;
-    //     }
-    // }
-}
-
-.text {
-    color: $textColor;
-    margin-left: 5px;
-}
-
-.attached {
-    color: $textColor;
-}
-
-.border {
-    border-left: 4px solid grey;
-    margin-left: 15px;
-
-    .team {
+    .subdivisionText {
         color: $textColor;
-        list-style: none;
+        margin-left: 5px;
+        font-weight: 600;
+    }
+
+}
+
+.borderLine {
+    border-left: 4px solid $lineColor;
+    margin-left: 15px;
+    list-style: none;
+
+
+    .color {
+        background-color: #483f9b;
+
+        &:nth-child(even) {
+            background-color: #5c7175;
+        }
+
+        &:hover {
+            background-color: $hoverColor;
+            transition: 0.5s;
+        }
+    }
+
+    .line {
+        color: $textColor;
         position: relative;
     }
 
-    .team::before {
+    .line::before {
         content: "";
         position: absolute;
         display: inline-block;
@@ -87,27 +126,26 @@
         height: 11px;
         top: 4.5px;
         left: -76px;
+        background-color: #3d5afe;
     }
 
-    .team2::before {
+    .line2::before {
         width: 13px;
-        background-color: pink;
-        left: -76.5px;
+        left: -77px;
     }
 
-    .team3::before {
+    .line3::before {
         width: 13px;
-        background-color: pink;
         left: -53px;
     }
 
-    .team4::before {
+    .line4::before {
         left: -59.5px;
     }
 
     .analyticsProgrammers {
         margin-left: 25px;
-        background-color: rgb(87, 56, 143);
+        background-color: #6b78a1;
 
         &:hover {
             background-color: $hoverColor;
@@ -115,36 +153,43 @@
         }
     }
 
+    .even:nth-child(1) {
+        background-color: #254b8b;
+        transition: 0.5s;
+    }
 
+    .even:hover {
+        background-color: $hoverColor;
+        transition: 0.5s;
+    }
 
     .items {
         margin-left: 25px;
 
-
         .listlineAnalytics {
-            border-left: 4px solid grey;
+            border-left: 4px solid $lineColor;
         }
 
         .wrappers {
             display: flex;
             align-items: center;
-            background-color: #1b4a81;
+            background-color: #252a30;
             width: 200px;
             margin: 10px auto 10px 15px;
             padding: 10px;
             transition: 0.5s;
 
             &:hover {
-                background-color: #2f00db;
+                background-color: $hoverColor;
                 transition: 0.5s;
             }
         }
 
         .wrappers:nth-child(even) {
-            background-color: red;
+            background-color: #ADC8FF;
 
             &:hover {
-                background-color: #0f0f11;
+                background-color: $hoverColor;
                 transition: 0.5s;
             }
         }
@@ -158,30 +203,11 @@
             content: "";
             position: absolute;
             display: inline-block;
-            background-color: $lineColor;
+            background-color: #304ffe;
             width: 13px;
             height: 11px;
             top: 4.5px;
             left: -30px;
         }
     }
-}
-
-.listlinesComponent {
-    border-left: 4px solid grey;
-}
-
-.listsComponent {
-    list-style: none;
-    position: relative;
-}
-
-.listsComponent::before {
-    content: "";
-    position: absolute;
-    display: block;
-    background-color: $lineColor;
-    width: 13px;
-    height: 11px;
-    top: 13.5px;
 }

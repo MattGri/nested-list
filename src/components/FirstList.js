@@ -16,162 +16,156 @@ const FirstList = ({
 }) => {
   return (
     <>
-      <div>
-        <div className="wrapper">
-          <input
-            type="radio"
-            id="firstChapter"
-            name="chapter"
-            value="firstChapter"
-            checked={firstChapter}
-            onClick={() => {
-              setFirstChapter(true);
-              setSecondChapter(false);
-              setThirdChapter(false);
-            }}
-          />
-          <label htmlFor="firstChapter" className="text">
-            {data.firstChapter}
-          </label>
-        </div>
-        {firstChapter ? (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8 }}
-            >
-              <ul className="border">
-                <div className="wrapper">
-                  <li className="team team2">{data.team.firstTeamHr}</li>
-                </div>
-                <div className="wrapper">
-                  <li className="team team3">{data.team.firstTeamMarketing}</li>
-                </div>
-                <div>
-                  <div className="wrapper analyticsProgrammers">
-                    <input
-                      type="checkbox"
-                      id="firstChapter"
-                      name="chapter"
-                      value="firstChapter"
-                      checked={firstAnalytics}
-                      onClick={() => {
-                        setFirstAnalytics(!firstAnalytics);
-                      }}
-                    />
-                    <label className="treeText team">
-                      {data.team.firstTeamAnalytics}
-                    </label>
-                  </div>
-
-                  {firstAnalytics ? (
-                    <>
-                      <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.8 }}
-                      >
-                        <div className="items">
-                          <ul className="listlineAnalytics">
-                            <div className="wrappers">
-                              <li className="treeText list">
-                                {data.team.analytics.calendar}
-                              </li>
-                            </div>
-                            <div className="wrappers ">
-                              <li className="treeText list">
-                                {data.team.analytics.cockpit}
-                              </li>
-                            </div>
-                            <div className="wrappers ">
-                              <li className="treeText list">
-                                {data.team.analytics.dashboard}
-                              </li>
-                            </div>
-                            <div className="wrappers ">
-                              <li className="treeText list">
-                                {data.team.analytics.reports}
-                              </li>
-                            </div>
-                            <div className="wrappers">
-                              <li className="treeText list">
-                                {data.team.analytics.tickets}
-                              </li>
-                            </div>
-                          </ul>
-                        </div>
-                      </motion.div>
-                    </>
-                  ) : (
-                    ''
-                  )}
-                </div>
-                <div>
-                  <div className="wrapper analyticsProgrammers">
-                    <input
-                      type="checkbox"
-                      id="firstChapter"
-                      name="chapter"
-                      value="firstChapter"
-                      checked={firstProgrammers}
-                      onClick={() => {
-                        setFirstProgrammers(!firstProgrammers);
-                      }}
-                    />
-                    <label className="treeText team team4">
-                      {data.team.programmersTeam}
-                    </label>
-                  </div>
-                  {firstProgrammers ? (
-                    <>
-                      <motion.div
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ duration: 0.8 }}
-                      >
-                        <div className="items">
-                          <ul className="listlineAnalytics">
-                            <div className="wrappers">
-                              <li className="treeText list">
-                                {data.team.programmers.frontend}
-                              </li>
-                            </div>
-                            <div className="wrappers">
-                              <li className="treeText list">
-                                {data.team.programmers.backend}
-                              </li>
-                            </div>
-                            <div className="wrappers">
-                              <li className="treeText list">
-                                {data.team.programmers.design}
-                              </li>
-                            </div>
-                            <div className="wrappers">
-                              <li className="treeText list">
-                                {data.team.programmers.devops}
-                              </li>
-                            </div>
-                            <div className="wrappers">
-                              <li className="treeText list">
-                                {data.team.programmers.qa}
-                              </li>
-                            </div>
-                          </ul>
-                        </div>
-                      </motion.div>
-                    </>
-                  ) : (
-                    ''
-                  )}
-                </div>
-              </ul>
-            </motion.div>
-          </>
-        ) : (
-          ''
-        )}
+      <div className="wrapper">
+        <input
+          type="radio"
+          id="firstSubdivision"
+          name="first subdivision"
+          checked={firstChapter}
+          onClick={() => {
+            setFirstChapter(true);
+            setSecondChapter(false);
+            setThirdChapter(false);
+          }}
+        />
+        <label htmlFor="firstChapter" className="subdivisionText">
+          {data.firstSubdivision}
+        </label>
       </div>
+      {firstChapter ? (
+        <>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.8 }}
+          >
+            <ul className="borderLine">
+              <div className="wrapper color">
+                <li className="line line2">{data.team1.firstTeamHr}</li>
+              </div>
+              <div className="wrapper color">
+                <li className="line line3">{data.team1.firstTeamMarketing}</li>
+              </div>
+              <div>
+                <div className="wrapper analyticsProgrammers ">
+                  <input
+                    type="checkbox"
+                    id="firstAnalytics"
+                    name="first analytics"
+                    checked={firstAnalytics}
+                    onClick={() => {
+                      setFirstAnalytics(!firstAnalytics);
+                    }}
+                  />
+                  <label className="treeText line">
+                    {data.team1.firstTeamAnalytics}
+                  </label>
+                </div>
+                {firstAnalytics ? (
+                  <>
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.8 }}
+                    >
+                      <div className="items">
+                        <ul className="listlineAnalytics">
+                          <div className="wrappers">
+                            <li className="treeText list">
+                              {data.team1.analytics1.calendar}
+                            </li>
+                          </div>
+                          <div className="wrappers">
+                            <li className="treeText list">
+                              {data.team1.analytics1.cockpit}
+                            </li>
+                          </div>
+                          <div className="wrappers ">
+                            <li className="treeText list">
+                              {data.team1.analytics1.dashboard}
+                            </li>
+                          </div>
+                          <div className="wrappers">
+                            <li className="treeText list">
+                              {data.team1.analytics1.reports}
+                            </li>
+                          </div>
+                          <div className="wrappers">
+                            <li className="treeText list">
+                              {data.team1.analytics1.tickets}
+                            </li>
+                          </div>
+                        </ul>
+                      </div>
+                    </motion.div>
+                  </>
+                ) : (
+                  ''
+                )}
+              </div>
+              <div>
+                <div className="wrapper analyticsProgrammers even">
+                  <input
+                    type="checkbox"
+                    id="firstProgrammers"
+                    name="first programmers"
+                    checked={firstProgrammers}
+                    onClick={() => {
+                      setFirstProgrammers(!firstProgrammers);
+                    }}
+                  />
+                  <label className="treeText line line4">
+                    {data.team1.programmersTeam}
+                  </label>
+                </div>
+                {firstProgrammers ? (
+                  <>
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 0.8 }}
+                    >
+                      <div className="items">
+                        <ul className="listlineAnalytics">
+                          <div className="wrappers">
+                            <li className="treeText list">
+                              {data.team1.programmers1.frontend}
+                            </li>
+                          </div>
+                          <div className="wrappers">
+                            <li className="treeText list">
+                              {data.team1.programmers1.backend}
+                            </li>
+                          </div>
+                          <div className="wrappers">
+                            <li className="treeText list">
+                              {data.team1.programmers1.design}
+                            </li>
+                          </div>
+                          <div className="wrappers">
+                            <li className="treeText list">
+                              {data.team1.programmers1.devops}
+                            </li>
+                          </div>
+                          <div className="wrappers">
+                            <li className="treeText list">
+                              {data.team1.programmers1.qa}
+                            </li>
+                          </div>
+                        </ul>
+                      </div>
+                    </motion.div>
+                  </>
+                ) : (
+                  ''
+                )}
+              </div>
+            </ul>
+          </motion.div>
+        </>
+      ) : (
+        ''
+      )}
     </>
   );
 };
