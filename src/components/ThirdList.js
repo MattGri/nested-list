@@ -26,7 +26,7 @@ const ThirdList = ({
             setSecondChapter(false);
           }}
         />
-        <label htmlFor="thirdChapter" className="subdivisionText">
+        <label htmlFor="thirdSubdivision" className="subdivisionText">
           {data.thirdSubdivision}
         </label>
       </div>
@@ -55,7 +55,7 @@ const ThirdList = ({
                       setThirdAnalytics(!thirdAnalytics);
                     }}
                   />
-                  <label className="treeText line">
+                  <label htmlFor="thirdAnalytics" className="text line">
                     {data.team3.thirdTeamAnalytics}
                   </label>
                 </div>
@@ -69,27 +69,27 @@ const ThirdList = ({
                       <div className="items">
                         <ul className="listlineAnalytics">
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team3.analytics3.calendar}
                             </li>
                           </div>
                           <div className="wrappers ">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team3.analytics3.cockpit}
                             </li>
                           </div>
                           <div className="wrappers ">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team3.analytics3.dashboard}
                             </li>
                           </div>
                           <div className="wrappers ">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team3.analytics3.reports}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team3.analytics3.tickets}
                             </li>
                           </div>
@@ -112,7 +112,7 @@ const ThirdList = ({
                       setThirdProgrammers(!thirdProgrammers);
                     }}
                   />
-                  <label className="treeText line line4">
+                  <label htmlFor="thirdProgrammers" className="text line line4">
                     {data.team3.thirdTeamProgrammers}
                   </label>
                 </div>
@@ -126,27 +126,27 @@ const ThirdList = ({
                       <div className="items">
                         <ul className="listlineAnalytics">
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team3.programmers3.frontend}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team3.programmers3.backend}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team3.programmers3.design}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team3.programmers3.devops}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team3.programmers3.qa}
                             </li>
                           </div>

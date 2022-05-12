@@ -1,6 +1,6 @@
 {
   "treeMultiline": "Tree Multiline",
-  "firstSubdivision": "subdivision 1",
+  "firstSubdivision": "Subdivision 1",
   "team1": {
     "firstTeamHr": "1 team HR",
     "firstTeamMarketing": "1 team marketing",
@@ -21,7 +21,7 @@
       "qa": "qa 1"
     }
   },
-  "secondSubdivision": "subdivision 2",
+  "secondSubdivision": "Subdivision 2",
   "team2": {
     "secondTeamHr": "2 team HR",
     "secondTeamMarketing": "2 team marketing",
@@ -42,7 +42,7 @@
       "qa": "qa 2"
     }
   },
-  "thirdSubdivision": "subdivision 3",
+  "thirdSubdivision": "Subdivision 3",
   "team3": {
     "thirdTeamHr": "3 team HR",
     "thirdTeamMarketing": "3 team marketing",

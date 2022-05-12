@@ -1,7 +1,4 @@
 import data from '../json.json';
-
-import '../Styles/NestedList.scss';
-
 import { motion } from 'framer-motion';
 
 const FirstList = ({
@@ -28,7 +25,7 @@ const FirstList = ({
             setThirdChapter(false);
           }}
         />
-        <label htmlFor="firstChapter" className="subdivisionText">
+        <label htmlFor="firstSubdivision" className="subdivisionText">
           {data.firstSubdivision}
         </label>
       </div>
@@ -47,7 +44,7 @@ const FirstList = ({
                 <li className="line line3">{data.team1.firstTeamMarketing}</li>
               </div>
               <div>
-                <div className="wrapper analyticsProgrammers ">
+                <div className="wrapper analyticsProgrammers">
                   <input
                     type="checkbox"
                     id="firstAnalytics"
@@ -57,7 +54,7 @@ const FirstList = ({
                       setFirstAnalytics(!firstAnalytics);
                     }}
                   />
-                  <label className="treeText line">
+                  <label htmlFor="firstAnalytics" className="text line">
                     {data.team1.firstTeamAnalytics}
                   </label>
                 </div>
@@ -71,27 +68,27 @@ const FirstList = ({
                       <div className="items">
                         <ul className="listlineAnalytics">
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team1.analytics1.calendar}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team1.analytics1.cockpit}
                             </li>
                           </div>
                           <div className="wrappers ">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team1.analytics1.dashboard}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team1.analytics1.reports}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team1.analytics1.tickets}
                             </li>
                           </div>
@@ -114,7 +111,7 @@ const FirstList = ({
                       setFirstProgrammers(!firstProgrammers);
                     }}
                   />
-                  <label className="treeText line line4">
+                  <label htmlFor="firstProgrammers" className="text line line4">
                     {data.team1.programmersTeam}
                   </label>
                 </div>
@@ -128,27 +125,27 @@ const FirstList = ({
                       <div className="items">
                         <ul className="listlineAnalytics">
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team1.programmers1.frontend}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team1.programmers1.backend}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team1.programmers1.design}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team1.programmers1.devops}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team1.programmers1.qa}
                             </li>
                           </div>

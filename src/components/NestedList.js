@@ -4,9 +4,9 @@ import FirstList from './FirstList';
 import SecondList from './SecondList';
 import ThirdList from './ThirdList';
 import NonAttached from './NonAttached';
-import { motion } from 'framer-motion';
-
 import '../Styles/NestedList.scss';
+
+import { motion } from 'framer-motion';
 
 const NestedList = () => {
   useEffect(() => {
@@ -39,9 +39,8 @@ const NestedList = () => {
               setTreeMultiline(!treeMultiline);
             }}
           />
-          <label className="treeText">{data.treeMultiline}</label>
+          <label className="text">{data.treeMultiline}</label>
         </div>
-
         {treeMultiline ? (
           <>
             <motion.div

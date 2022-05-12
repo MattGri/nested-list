@@ -26,7 +26,7 @@ const SecondList = ({
             setThirdChapter(false);
           }}
         />
-        <label htmlFor="secondChapter" className="subdivisionText">
+        <label htmlFor="secondSubdivision" className="subdivisionText">
           {data.secondSubdivision}
         </label>
       </div>
@@ -55,7 +55,7 @@ const SecondList = ({
                       setSecondAnalytics(!secondAnalytics);
                     }}
                   />
-                  <label className="treeText line">
+                  <label htmlFor="secondAnalytics" className="text line">
                     {data.team2.secondTeamAnalytics}
                   </label>
                 </div>
@@ -69,27 +69,27 @@ const SecondList = ({
                       <div className="items">
                         <ul className="listlineAnalytics">
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team2.analytics2.calendar}
                             </li>
                           </div>
                           <div className="wrappers ">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team2.analytics2.cockpit}
                             </li>
                           </div>
                           <div className="wrappers ">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team2.analytics2.dashboard}
                             </li>
                           </div>
                           <div className="wrappers ">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team2.analytics2.reports}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team2.analytics2.tickets}
                             </li>
                           </div>
@@ -112,7 +112,10 @@ const SecondList = ({
                       setSecondProgrammers(!secondProgrammers);
                     }}
                   />
-                  <label className="treeText line line4">
+                  <label
+                    htmlFor="secondProgrammers"
+                    className="text line line4"
+                  >
                     {data.team2.secondProgrammersTeam}
                   </label>
                 </div>
@@ -126,27 +129,27 @@ const SecondList = ({
                       <div className="items">
                         <ul className="listlineAnalytics">
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team2.programmers2.frontend}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team2.programmers2.backend}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team2.programmers2.design}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team2.programmers2.devops}
                             </li>
                           </div>
                           <div className="wrappers">
-                            <li className="treeText list">
+                            <li className="text list">
                               {data.team2.programmers2.qa}
                             </li>
                           </div>
